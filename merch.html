@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="The Willow Kin">
+    <title>My Album - Merchandise</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="album.html">Album</a></li>
+        <li><a href="merch.html">Merchandise</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Merchandise</h1>
+      <div class="merch-wrapper">
+          <div class="merch-item">
+              <img src="img/t shirt.png" alt="Roots of the River T-shirt">
+              <h3>Roots of the River T-shirt</h3>
+              <p>Price: $20.00</p>
+              <button>Add to Cart</button>
+          </div>
+          <div class="merch-item">
+              <img src="img/vinyl.png" alt="Roots of the River Vinyl Record">
+              <h3>Roots of the River Vinyl</h3>
+              <p>Price: $30.00</p>
+              <button>Add to Cart</button>
+          </div>
+      </div>
+    </section>
+
+    <section>
+        <form action="handler.php" method="post">
+            <fieldset>
+                <legend>Payment details</legend>
+
+                <label for="ccno">Credit Card Number</label>
+                <input type="tel" id="ccno" name="credit_card_number" pattern="\d{13,16}" required placeholder="Enter credit card number">
+
+                <br>
+
+                <label for="cvvno">CVV Number</label>
+                <input type="tel" id="cvvno" name="cvv_number" pattern="\d{3}" required placeholder="Enter CVV">
+
+            </fieldset>
+
+            <button type="submit">Submit Payment</button>
+
+        </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2024 The Willow Kin</p>
+  </footer>
+</body>
+</html>
